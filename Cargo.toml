@@ -1,0 +1,6 @@
+[package]
+name = "lock-free-stack"
+version = "0.1.0"
+authors = ["sombr <serge.toropov@gmail.com>"]
+
+[dependencies]
