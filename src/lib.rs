@@ -1,2 +1,1 @@
-mod lock_free_stack;
-mod tests;
+pub mod lock_free_stack;

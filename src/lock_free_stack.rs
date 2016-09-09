@@ -83,6 +83,12 @@ impl<T> Stack<T> {
     }
 }
 
+impl<T> Drop for Stack<T> {
+    fn drop(&mut self) {
+        let _ = self.remove_all();
+    }
+}
+
 impl<M> Iterator for StackTailIterator<M> {
     type Item = M;
 
@@ -95,5 +101,11 @@ impl<M> Iterator for StackTailIterator<M> {
 
             Some(boxed_node.payload)
         }
+    }
+}
+
+impl<M> Drop for StackTailIterator<M> {
+    fn drop(&mut self) {
+        for _ in self {}
     }
 }
