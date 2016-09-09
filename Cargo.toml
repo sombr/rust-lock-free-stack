@@ -1,6 +1,6 @@
 [package]
 name = "lock-free-stack"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["sombr <serge.toropov@gmail.com>"]
 
 description = "Lock-free (atomic-based) Collection which internally represent data as a Stack, and exposes an interface allowing to add elements, get size, and remove all giving a reverse-iterator."
